@@ -1,0 +1,37 @@
+<p>add works!</p>
+{{loanForm.value | json}} <br>
+<form action="" [formGroup]="loanForm">
+    <table>
+        <tr>
+            <td><label for="">LOANID</label></td>
+            <td><input type="text" formControlName="loanId"></td>
+        </tr>
+        <tr>
+            <td><label for="">LOANCUSTOMERNAME</label></td>
+            <td><input type="text" formControlName="loanCustomerName"></td>
+        </tr>
+        <tr>
+            <td><label for="">LOAN AMOUNT</label></td>
+            <td><input type="text" formControlName="loanAmount"></td>
+        </tr>
+        <tr>
+            <td><label for="">DATE OF LOAN</label></td>
+            <td><input type="text" formControlName="dateOfLoan"></td>
+        </tr>
+        <tr>
+            <td><label for="">TENURE</label></td>
+            <td><input type="text" formControlName="tenure"></td>
+        </tr>
+        <tr>
+            <td><label for="">RATE OF INTEREST</label></td>
+            <td><input type="text" formControlName="rateOfInterest"></td>
+        </tr>
+      
+        <tr>
+            
+            <td colspan="2">
+                <button type="button" (click)="add()">ADD</button>
+            </td>
+        </tr>
+    </table>
+</form>
